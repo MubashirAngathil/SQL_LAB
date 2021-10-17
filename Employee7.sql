@@ -1,5 +1,4 @@
-# Consider the employee database given below. Give an expression in SQL for each of 
-  the following queries:
+# Consider the employee database given below. Give an expression in SQL for each of  the following queries:
 
 create database Employee;
 
