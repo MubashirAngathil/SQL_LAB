@@ -1,2 +1,2 @@
 # SQL_LAB
-Third sem MYSQL Lab programs
+BCA Third sem MYSQL Lab programs
