@@ -19,32 +19,7 @@ salesman_no varchar(10),
 constraint pk_order primary key (order_no),
 constraint fk_salesman_no foreign key (salesman_no) references sales_man(salesman_no),constraint ck_del_type check(del_type="F" or del_type="P"),
 constraint ck_order_status check (order_status in("Inprocess","Fullfilled","Backordered","Cancelled")));
-
-desc sales_man;
       
-+-------------+--------+-------+-----------+
-| salesman_no | s_name | place | phone     |
-+-------------+--------+-------+-----------+
-| s001        | Anil   | US    | 705030201 |
-| s002        | Arun   | UK    | 708030201 |
-| s003        | Jack   | US    | 705020201 |
-| s004        | Manu   | UK    | 705030261 |
-| s005        | Ram    | UK    | 705038201 |
-+-------------+--------+-------+-----------+
-      
-
-desc sales_order;
-
-+--------------+-------------+------+-----+---------+-------+
-| Field        | Type        | Null | Key | Default | Extra |
-+--------------+-------------+------+-----+---------+-------+
-| order_no     | varchar(10) | NO   | PRI | NULL    |       |
-| order_date   | date        | NO   |     | NULL    |       |
-| salesman_no  | varchar(10) | YES  | MUL | NULL    |       |
-| del_type     | varchar(1)  | YES  |     | NULL    |       |
-| order_status | varchar(20) | YES  |     | NULL    |       |
-+--------------+-------------+------+-----+---------+-------+
-
 insert into sales_man(salesman_no,s_name,place,phone)values
  ("s001","Anil","US","705030201"),
  ("s002","Arun","UK","708030201"),
