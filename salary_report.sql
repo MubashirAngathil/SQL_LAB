@@ -1,4 +1,3 @@
-
 create database salary_report;
 use salary_report;
 
