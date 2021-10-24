@@ -1,5 +1,6 @@
 
 create database salary_report;
+
 use salary_report;
 
 create table salaries(sno int,EmpNo varchar(10) primary key,EName varchar(20),Basic_pay Numeric(6),DA Numeric,Gross_salary Numeric,PF Numeric,Net_salary Numeric,Annual_salary numeric,Tax Numeric);
